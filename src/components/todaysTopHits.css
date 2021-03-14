@@ -1,0 +1,37 @@
+.todaysTop {
+    position:static;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    height: calc(100vh);
+    font-family: 'Courier New', Courier, monospace;
+}
+.todaysTop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../images/background.jpg");
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topdaysTop_row {
+    height: 600px;
+    width: 100%;
+}
+.swiper-wrapper {
+   width: 100%;
+   margin:0 auto;
+   padding: 20px;
+}
+.swiper-slide {
+    margin: 0;
+}
+img {
+  width: 100%;
+  object-fit: fill;
+
+}
