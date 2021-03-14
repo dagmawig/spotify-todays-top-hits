@@ -1,50 +1,67 @@
-import React, { useEffect } from 'react';
+import React, { PureComponent, useEffect } from 'react';
 import './todaysTopHits.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectCoverflow } from 'swiper';
-
+import { useStateValue } from './StateWrap';
 import 'swiper/swiper-bundle.css'
-// import 'swiper/components/effect-coverflow/effect-coverflow.css'
+import axios from 'axios';
 
 SwiperCore.use([EffectCoverflow]);
 
-const trackName = "Save Your Tears";
-const artistNames = ["The Weeknd"];
-const explicit = true;
-const trackLink = "https://open.spotify.com/track/7MAibcTli4IisCtbHKrGMh";
-const popularity = 96;
-const trackImage = "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36";
 
-const Img1 = "https://i.scdn.co/image/ab67616d0000b2736f9e6abbd6fa43ac3cdbeee0";
-const Img2 = "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36";
-const Immg3 = "https://i.scdn.co/image/ab67616d0000b273f4b8a43495c6172243cf16f4"
 
 function TodaysTop() {
 
-    // var swiper = new Swiper('.swiper-container', {
-    //     effect: 'coverflow',
-    //     grabCursor: true,
-    //     centeredSlides: true,
-    //     slidesPerView: 'auto',
-    //     coverflowEffect: {
-    //         rotate: 50,
-    //         stretch: 0,
-    //         depth: 100,
-    //         modifier: 1,
-    //         slideShadows: true,
-    //     },
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //     },
-    // });
+    const [{ data, loadingDisplay }, dispatch] = useStateValue();
 
-    // useEffect(() => {
-    //     return () => swiper
-    // }, [swiper])
+    useEffect(() => {
+        async function loadData() {
+            let res = await axios.get("http://localhost:3001/todaysTop");
+            return res;
+        }
+        dispatch({
+            type: 'TOGGLE_LOADING',
+            loadingDisplay: 'block'
+        })
+        loadData()
+            .then(res => {
+                console.log(res.data);
+                dispatch({
+                    type: 'LOAD_DATA',
+                    data: res.data.data
+                })
+                dispatch({
+                    type: 'TOGGLE_LOADING',
+                    loadingDisplay: 'none'
+                })
+            })
+    }, [])
+
+    function getColor(value) {
+        value = value / 100
+        var hue = ((1 - value) * 120).toString(10);
+        return ["hsl(", hue, ",100%,50%)"].join("");
+    }
+
+
+    const trackDiv = data.tracks.items.map((track, i) => {
+
+        return (
+            <SwiperSlide className="swiper-slide" key={i + 'tl'}>
+                <a href={track.track.external_urls.spotify} target="_blank"><img src={track.track.album.images[0].url} /></a>
+                <h5 className="track-name">{track.track.name} <i className="fas fa-fire" style={{
+                    color: getColor(track.track.popularity)
+                }}></i></h5>
+                <h6>{track.track.artists[0].name}</h6>
+            </SwiperSlide>
+        );
+    });
+
+
 
     return (
         <div className="todaysTop container">
-            <div classname="todaysTop_row row">
+            <div className="todaysTop_row row">
                 <Swiper className="swiper"
                     effect="coverflow"
                     centeredSlides={true}
@@ -52,21 +69,17 @@ function TodaysTop() {
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
-                        depth:100,
+                        depth: 100,
                         modifier: 1,
                         slideShadows: true
                     }}
-                    pagination= {{
+                    pagination={{
                         el: '.swiper-pagnation'
                     }}
-                    // spaceBetween={50}
-                    // slidesPerView={3}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide className="swiper-slide"><img src="https://i.scdn.co/image/ab67616d0000b273f4b8a43495c6172243cf16f4" /></SwiperSlide>
-                    <SwiperSlide className="swiper-slide"><img src="https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36" /></SwiperSlide>
-                    <SwiperSlide className="swiper-slide"><img src="https://i.scdn.co/image/ab67616d0000b2736f9e6abbd6fa43ac3cdbeee0" /></SwiperSlide>
+                    {trackDiv}
                 </Swiper>
             </div>
         </div>

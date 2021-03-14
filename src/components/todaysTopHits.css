@@ -2,7 +2,7 @@
     position:static;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 20px 0;
     height: calc(100vh);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -19,16 +19,27 @@
     background-size: cover;
 }
 .topdaysTop_row {
-    height: 600px;
+    height: 500px;
     width: 100%;
+    margin: 0;
+}
+.swiper-container {
+    width: 100%;
+    margin:0 auto;
+    height: 80%;
 }
 .swiper-wrapper {
    width: 100%;
    margin:0 auto;
-   padding: 20px;
+   padding: 30px;
 }
 .swiper-slide {
     margin: 0;
+    height: 100%;
+}
+.slide {
+    width: 100%;
+    height: 100%
 }
 img {
   width: 100%;
