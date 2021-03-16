@@ -48,10 +48,11 @@ function TodaysTop() {
 
         return (
             <SwiperSlide className="swiper-slide" key={i + 'tl'}>
-                <a href={track.track.external_urls.spotify} target="_blank"><img src={track.track.album.images[0].url} /></a>
-                <h5 className="track-name">{track.track.name} <i className="fas fa-fire" style={{
+                <a href={track.track.external_urls.spotify} target="_blank"><img alt="track image"src={track.track.album.images[0].url} /></a>
+                <h5 className="track-name">{track.track.name} </h5>
+                <i className="fas fa-fire" style={{
                     color: getColor(track.track.popularity)
-                }}></i></h5>
+                }}></i>
                 <h6>{track.track.artists[0].name}</h6>
             </SwiperSlide>
         );
@@ -62,6 +63,9 @@ function TodaysTop() {
     return (
         <div className="todaysTop container">
             <div className="todaysTop_row row">
+                <div className="todaysTop_title">
+                    <h3>Today's Top Hits</h3>
+                </div>
                 <Swiper className="swiper"
                     effect="coverflow"
                     centeredSlides={true}
