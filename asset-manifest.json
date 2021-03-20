@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/spotify-todays-top-hits/static/css/main.0c792986.chunk.css",
-    "main.js": "/spotify-todays-top-hits/static/js/main.320914d9.chunk.js",
-    "main.js.map": "/spotify-todays-top-hits/static/js/main.320914d9.chunk.js.map",
+    "main.js": "/spotify-todays-top-hits/static/js/main.63bdb892.chunk.js",
+    "main.js.map": "/spotify-todays-top-hits/static/js/main.63bdb892.chunk.js.map",
     "runtime-main.js": "/spotify-todays-top-hits/static/js/runtime-main.60f3badc.js",
     "runtime-main.js.map": "/spotify-todays-top-hits/static/js/runtime-main.60f3badc.js.map",
     "static/css/2.007fb8c3.chunk.css": "/spotify-todays-top-hits/static/css/2.007fb8c3.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.007fb8c3.chunk.css",
     "static/js/2.7e20222d.chunk.js",
     "static/css/main.0c792986.chunk.css",
-    "static/js/main.320914d9.chunk.js"
+    "static/js/main.63bdb892.chunk.js"
   ]
 }
