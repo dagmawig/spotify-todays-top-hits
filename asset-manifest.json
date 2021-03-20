@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/io/spotify-todays-top-hits/static/css/main.6ba3f84c.chunk.css",
-    "main.js": "/io/spotify-todays-top-hits/static/js/main.320914d9.chunk.js",
-    "main.js.map": "/io/spotify-todays-top-hits/static/js/main.320914d9.chunk.js.map",
-    "runtime-main.js": "/io/spotify-todays-top-hits/static/js/runtime-main.f43d8d00.js",
-    "runtime-main.js.map": "/io/spotify-todays-top-hits/static/js/runtime-main.f43d8d00.js.map",
-    "static/css/2.007fb8c3.chunk.css": "/io/spotify-todays-top-hits/static/css/2.007fb8c3.chunk.css",
-    "static/js/2.7e20222d.chunk.js": "/io/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js",
-    "static/js/2.7e20222d.chunk.js.map": "/io/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js.map",
-    "index.html": "/io/spotify-todays-top-hits/index.html",
-    "static/css/2.007fb8c3.chunk.css.map": "/io/spotify-todays-top-hits/static/css/2.007fb8c3.chunk.css.map",
-    "static/css/main.6ba3f84c.chunk.css.map": "/io/spotify-todays-top-hits/static/css/main.6ba3f84c.chunk.css.map",
-    "static/js/2.7e20222d.chunk.js.LICENSE.txt": "/io/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js.LICENSE.txt",
-    "static/media/todaysTopHits.css": "/io/spotify-todays-top-hits/static/media/background.77961e69.jpg"
+    "main.css": "/spotify-todays-top-hits/static/css/main.0c792986.chunk.css",
+    "main.js": "/spotify-todays-top-hits/static/js/main.320914d9.chunk.js",
+    "main.js.map": "/spotify-todays-top-hits/static/js/main.320914d9.chunk.js.map",
+    "runtime-main.js": "/spotify-todays-top-hits/static/js/runtime-main.60f3badc.js",
+    "runtime-main.js.map": "/spotify-todays-top-hits/static/js/runtime-main.60f3badc.js.map",
+    "static/css/2.007fb8c3.chunk.css": "/spotify-todays-top-hits/static/css/2.007fb8c3.chunk.css",
+    "static/js/2.7e20222d.chunk.js": "/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js",
+    "static/js/2.7e20222d.chunk.js.map": "/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js.map",
+    "index.html": "/spotify-todays-top-hits/index.html",
+    "static/css/2.007fb8c3.chunk.css.map": "/spotify-todays-top-hits/static/css/2.007fb8c3.chunk.css.map",
+    "static/css/main.0c792986.chunk.css.map": "/spotify-todays-top-hits/static/css/main.0c792986.chunk.css.map",
+    "static/js/2.7e20222d.chunk.js.LICENSE.txt": "/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js.LICENSE.txt",
+    "static/media/todaysTopHits.css": "/spotify-todays-top-hits/static/media/background.77961e69.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f43d8d00.js",
+    "static/js/runtime-main.60f3badc.js",
     "static/css/2.007fb8c3.chunk.css",
     "static/js/2.7e20222d.chunk.js",
-    "static/css/main.6ba3f84c.chunk.css",
+    "static/css/main.0c792986.chunk.css",
     "static/js/main.320914d9.chunk.js"
   ]
 }
