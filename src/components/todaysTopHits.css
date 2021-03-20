@@ -79,13 +79,15 @@ img {
 }
 .recharts-responsive-container {
     margin: 0 auto;
-    font-size: 8pt;
+    font-size: 10pt;
+    font-weight: bold;
 }
 .recharts-wrapper {
-    padding-top: 20px;
+    padding-top: 35px;
 }
 .recharts-legend-wrapper {
     transform: translate(5px,0);
+    font-weight: bold;
 }
 .recharts-legend-wrapper {
     font-size: 12pt;

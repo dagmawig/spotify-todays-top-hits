@@ -1,4 +1,7 @@
 export const initialState = {
+    features: [
+        0, 0, 0, 0, 0, 0
+    ],
     data: {
         tracks: {
             items: []
@@ -18,6 +21,10 @@ const reducer = (state, action) => {
             return {
                 ...state, data: action.data
             };
+        case "UPDATE_FEATURES":
+            return {
+                ...state, features: action.data
+            }
             default:
                 return state;
     }
