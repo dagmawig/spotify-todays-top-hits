@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/spotify-todays-top-hits/static/css/main.b9f7e116.chunk.css",
+    "main.css": "/spotify-todays-top-hits/static/css/main.68558c0c.chunk.css",
     "main.js": "/spotify-todays-top-hits/static/js/main.63bdb892.chunk.js",
     "main.js.map": "/spotify-todays-top-hits/static/js/main.63bdb892.chunk.js.map",
     "runtime-main.js": "/spotify-todays-top-hits/static/js/runtime-main.60f3badc.js",
@@ -10,7 +10,7 @@
     "static/js/2.7e20222d.chunk.js.map": "/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js.map",
     "index.html": "/spotify-todays-top-hits/index.html",
     "static/css/2.007fb8c3.chunk.css.map": "/spotify-todays-top-hits/static/css/2.007fb8c3.chunk.css.map",
-    "static/css/main.b9f7e116.chunk.css.map": "/spotify-todays-top-hits/static/css/main.b9f7e116.chunk.css.map",
+    "static/css/main.68558c0c.chunk.css.map": "/spotify-todays-top-hits/static/css/main.68558c0c.chunk.css.map",
     "static/js/2.7e20222d.chunk.js.LICENSE.txt": "/spotify-todays-top-hits/static/js/2.7e20222d.chunk.js.LICENSE.txt",
     "static/media/todaysTopHits.css": "/spotify-todays-top-hits/static/media/background.77961e69.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.60f3badc.js",
     "static/css/2.007fb8c3.chunk.css",
     "static/js/2.7e20222d.chunk.js",
-    "static/css/main.b9f7e116.chunk.css",
+    "static/css/main.68558c0c.chunk.css",
     "static/js/main.63bdb892.chunk.js"
   ]
 }
