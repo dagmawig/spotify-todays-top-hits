@@ -68,11 +68,11 @@ function TodaysTop() {
     // hook used to load data from spotify api.
     useEffect(() => {
         async function loadData() {
-            let res = await axios.get("http://localhost:3001/todaysTop");
+            let res = await axios.get("https://spotifytophits.glitch.me/todaysTop");
             return res;
         }
         async function loadFeature(IDArray) {
-            let res = await axios.post("http://localhost:3001/trackFeature", { trackID: IDArray });
+            let res = await axios.post("https://spotifytophits.glitch.me/trackFeature", { trackID: IDArray });
             return res;
         }
         dispatch({
