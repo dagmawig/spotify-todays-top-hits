@@ -15,7 +15,6 @@ function TodaysTop() {
     const [{ data, features }, dispatch] = useStateValue();
     const [trackName, setTName] = useState("");
     var trackFeature = null;
-    // var trackName = "";
     var trackNameArr = [];
     var tData = [
         { parameter: 'Danceability', A: features[0], limit: 1, domain: [0, 1] },
@@ -46,10 +45,6 @@ function TodaysTop() {
                 data: [tFeature.danceability, tFeature.energy, tFeature.speechiness, tFeature.acousticness, tFeature.instrumentalness, tFeature.liveness]
             });
         }
-
-
-
-
     }
 
 
@@ -106,9 +101,6 @@ function TodaysTop() {
                             loadingDisplay: 'none'
                         })
                     })
-                    .then(() => {
-                        // console.log(document.getElementsByClassName('swiper-slide-active')[0].getAttribute("itemRef"));
-                    })
             })
     }, [])
 
@@ -134,7 +126,6 @@ function TodaysTop() {
                     pagination={{
                         el: '.swiper-pagnation'
                     }}
-                    // onSlideChange={}
                     onSwiper={(swiper) => console.log(swiper)}
                     onTransitionEnd = {handleSlide}
                 >
