@@ -37,7 +37,7 @@ function TodaysTop() {
         let index = document.getElementsByClassName('swiper-slide-active')[0].getAttribute("itemRef");
         
         setTName(trackNameArr[index]);
-        
+
         if (trackFeature) {
 
             let tFeature = trackFeature.audio_features[index];
@@ -118,7 +118,7 @@ function TodaysTop() {
 
             <div className="todaysTop_row row">
                 <div className="todaysTop_title col-12">
-                    <h3>Today's Top Hits</h3>
+                    <h5>Spotify Today's Top Hits</h5>
                 </div>
                 <Swiper className="swiper"
                     effect="coverflow"
