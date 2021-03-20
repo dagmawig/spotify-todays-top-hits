@@ -114,7 +114,7 @@ function TodaysTop() {
                 <div className="todaysTop_title col-12">
                     <h5>Spotify Today's Top Hits</h5>
                 </div>
-                <Swiper className="swiper"
+                <Swiper className="swiper col-12"
                     effect="coverflow"
                     centeredSlides={true}
                     slidesPerView={3}
