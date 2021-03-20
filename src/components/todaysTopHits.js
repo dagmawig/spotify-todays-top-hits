@@ -137,7 +137,7 @@ function TodaysTop() {
                     <ResponsiveContainer height={.25 * window.innerHeight} width="95%" style={{ margin: "auto" }} >
                         <RadarChart cx="50%" cy="50%" outerRadius="80%" width="80%" data={tData} >
                             <PolarGrid stroke="tomato" />
-                            <Legend verticalAlign="top" />
+                            <Legend iconType="wye" verticalAlign="top" />
                             <PolarAngleAxis dataKey="parameter" />
                             <Radar name={trackName} dataKey="A" stroke="black" fill="black" fillOpacity={0.6}></Radar>
                         </RadarChart>
